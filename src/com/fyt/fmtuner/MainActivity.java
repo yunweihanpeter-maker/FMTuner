@@ -381,8 +381,10 @@ public class MainActivity extends Activity {
         static final String GEO_URL_TEXT = "https://myip.ipip.net/";
         // 备用：JSON 接口（free 版仅 HTTP）
         static final String GEO_URL_JSON = "http://ip-api.com/json/?lang=zh-CN&fields=status,regionName,city";
-        // 频率库在线更新地址（托管后即为可用全量 JSON；不可用时静默回退内置库）
+        // 频率库在线更新地址（依序尝试，全部失败静默回退内置库）
+        // jsDelivr CDN 国内可达；raw.githubusercontent 国内直连常失败仅作备用
         final String[] DB_URLS = {
+                "https://cdn.jsdelivr.net/gh/yunweihanpeter-maker/FMTuner@main/assets/fm_cities.json",
                 "https://raw.githubusercontent.com/yunweihanpeter-maker/FMTuner/main/assets/fm_cities.json"
         };
 
