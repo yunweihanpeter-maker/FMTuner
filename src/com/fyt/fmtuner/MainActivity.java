@@ -383,7 +383,7 @@ public class MainActivity extends Activity {
         static final String GEO_URL_JSON = "http://ip-api.com/json/?lang=zh-CN&fields=status,regionName,city";
         // 频率库在线更新地址（托管后即为可用全量 JSON；不可用时静默回退内置库）
         final String[] DB_URLS = {
-                "https://raw.githubusercontent.com/fyt-fmtuner/fm-cities/main/fm_cities.json"
+                "https://raw.githubusercontent.com/yunweihanpeter-maker/FMTuner/main/assets/fm_cities.json"
         };
 
         final JSONObject builtin;
