@@ -1,0 +1,18 @@
+# 构建产物
+build/
+obj/
+gen/
+
+# APK 一律走 GitHub Releases，不入库
+dist/
+
+# 平台签名密钥，严禁入库
+keys/
+
+# 个人调试脚本（含车机 IP）与日志
+wait_*.sh
+*.log
+
+# IDE
+.idea/
+*.iml
